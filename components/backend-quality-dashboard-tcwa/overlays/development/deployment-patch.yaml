@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-tcwa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-txil-tenant/mc-quality-dashboard/backend-quality-dashboard-tcwa@sha256:38b0ea7120543801d01c484ad2f7116067c0aa4e2199838e31fc6b2e24d9b985
+        name: container-image
+        resources: {}
+status: {}
